@@ -12,15 +12,15 @@
     </div>
   <% end %>
   <div class="field">
-  <%= f.label :title, for:"book_title" %>
-  <%= f.text_field :title,class:"book_title",name:"book[title]",id:"book_title" %>
+    <%= f.label :title, for:"book_title" %>
+    <%= f.text_field :title,class:"book_title",name:"book[title]",id:"book_title" %>
   </div>
   <div class="field">
-  <%= f.label :body, for:"book_body" %>
-  <%= f.text_area :body,class:"book_body",name:"book[body]",id:"book_body" %>
+    <%= f.label :body, for:"book_body" %>
+    <%= f.text_area :body,class:"book_body",name:"book[body]",id:"book_body" %>
   </div>
   <div class="actions">
-  <%= f.submit 'Update Book' %>
+    <%= f.submit 'Update Book' %>
   </div>
 <% end %>
 <%= link_to "Show",book_path(@book.id) %> | <%= link_to "Back",books_path %>
